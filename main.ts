@@ -217,7 +217,7 @@ let mySprite2 = sprites.create(img`
 . . . . . . c c 6 c c c c c c 6 c f . . . . . . 
 `, SpriteKind.Projectile)
 info.changeScoreBy(1)
-controller.player2.moveSprite(mySprite2)
+controller.player2.moveSprite(mySprite2, 100, 100)
 let mySprite3 = sprites.create(img`
 . . . . . . . . . . b 5 b . . . 
 . . . . . . . . . b 5 b . . . . 
@@ -235,7 +235,8 @@ c b b d 5 d c d 5 5 5 5 5 5 b .
 . b 5 5 b c d d 5 5 5 5 5 d b . 
 b b c c c d d d d 5 5 5 b b . . 
 . . . c c c c c c c c b b . . . 
-`, SpriteKind.Player)
+`, SpriteKind.player2)
 for (let index = 0; index <= 4; index++) {
     index += 1
 }
+let index = sprites.create(sprites.castle.houseRed, SpriteKind.Player)
